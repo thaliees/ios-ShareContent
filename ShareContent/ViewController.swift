@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func shareContent(_ sender: UIButton) {
-        guard let url = URL(string: "https://universalelinks.herokuapp.com/appios/product.html") else { return }
+        guard let url = URL(string: "https://deep-links-universal.herokuapp.com/appios/product.html") else { return }
         
         let activity = UIActivityViewController(activityItems: [url], applicationActivities: nil)
         self.present(activity, animated: true, completion: nil)
